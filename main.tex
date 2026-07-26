@@ -11,6 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[margin=0.5in]{geometry}
 \input{glyphtounicode}
 
 
@@ -32,13 +33,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
+% geometry package manages margins (set above)
 \urlstyle{same}
 
 \raggedbottom
@@ -55,11 +50,7 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
+\newcommand{\resumeItem}[1]{\item\small{#1}\vspace{1pt}}
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -89,7 +80,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2pt,topsep=3pt,parsep=0pt,partopsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -104,7 +95,7 @@
 %-----------SUMMARY-----------
 \section{Summary}
 \vspace{-4pt}
-\small{Software engineer with 3 years of experience building full-stack products and cloud-native services with a focus on delivering reliable, user-centered solutions across AWS, backend systems, and modern web platforms.}
+\small{Software engineer with a Bachelor's degree in Computer Science and over 3 years of experience in software development.}
 
 %-----------PROGRAMMING SKILLS-----------
 \input{technical_skills}
